@@ -11,7 +11,7 @@ define("PROJECT_DIR", ""); // /Users/kbalog/work/github/uis-dat310-spring2015/le
 // init Smarty
 require(SMARTY_DIR . "Smarty.class.php");
 $smarty = new Smarty();
-$smarty->setTemplateDir(PROJECT_DIR . "Smarty/templates");
+$smarty->setTemplateDir(PROJECT_DIR . "Smarty");
 $smarty->setCompileDir(PROJECT_DIR . "Smarty/templates_c");
 $smarty->setCacheDir(PROJECT_DIR . "Smarty/cache");
 $smarty->setConfigDir(PROJECT_DIR . "Smarty/configs");
