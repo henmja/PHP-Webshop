@@ -1,0 +1,307 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+/** GENERAL **/
+
+html {
+    position: relative;
+    min-height: 100%; /* needed for footer */
+}
+
+body {
+    margin: 0 0 60px; /* equals footer height */
+    padding: 0px;
+}
+
+* {
+    font-family: Raleway, sans-serif;
+    color: #424242;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    color: #3299BB;
+}
+
+/** HEADER **/
+
+header {
+    height: 120px;
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    overflow: auto;
+}
+
+header h1 {
+    margin-left: 10px;
+}
+
+nav {
+    height: 30px;
+    background-color: #E9E9E9;
+    border-top: 1px solid #BCBCBC;
+    border-bottom: 1px solid #BCBCBC;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul {
+    margin-top: 0px;
+    padding-left: 10px;
+}
+
+nav li {
+    display: inline-block;
+    height: 30px;
+    padding: 5px 10px 5px;
+    font-size: 0.9em;
+}
+
+nav a {
+    color: #424242;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/** MAIN **/
+
+main {
+    overflow: auto; /* trick needed because it only contains floating elements */
+    padding-left: 10px;
+    margin-bottom: 100px; /* space between the content and the footer */
+}
+
+
+/** FOOTER **/
+
+footer {
+    background-color: #424242;
+    height: 60px;
+    font-size: 0.8em;
+    padding: 10px 0px 0px 10px;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    overflow: auto; /* trick needed because it only contains floating elements */
+}
+
+footer a {
+    color: #E9E9E9;
+}
+
+footer .fa {
+    color: #E9E9E9;
+    padding-left: 5px;
+}
+
+footer .contact {
+    color: #E9E9E9;
+    width: 200px;
+    float: left;
+}
+
+footer .strong {
+    color: #E9E9E9;
+    font-weight: bold;
+}
+
+a.button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #3299BB;
+    width: 120px;
+    padding: 5px;
+    color: #E9E9E9;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.button .fa {
+    color: #E9E9E9;
+}
+
+
+/** PRODUCTS (general) **/
+
+article {
+    padding: 5px;
+    margin: 10px 10px 0px 0px;
+    position: relative;
+    float: left;
+}
+
+article h3 {
+    font-size: 1.1em;
+}
+
+article img {
+    width: 100%;
+}
+
+article .price {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-size: 1em;
+}
+
+.sale {
+    color: #FF9900;
+    font-weight: bold;
+}
+
+article .price s {
+    font-weight: normal;
+    color: #424242;
+}
+
+article div.sale {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 60px;
+    height: 40px;
+    line-height: 40px; /* we set the line-height to the same as height for vertical alignment of the text */
+    background-color: white;
+    border-left: 1px solid #BCBCBC;
+    border-bottom: 1px solid #BCBCBC;
+    z-index: 1;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+
+/** PRODUCTS (main page) **/
+
+article.preview {
+    width: 250px;
+    height: 360px;
+    border: 1px solid #BCBCBC;
+}
+
+article.preview:hover {
+    background-color: #E9E9E9;
+}
+
+.newline {
+    clear: both;
+}
+
+
+/** PRODUCTS (product page) **/
+
+article.product {
+    position: relative;
+    margin-top: 10px;
+}
+
+article.product div.image {
+    border: 1px solid #BCBCBC;
+    width: 350px;
+    float: left;
+    position: relative;
+}
+
+article.product h3 {
+    margin-top: 0px;
+}
+
+article.product div.details {
+    width: 350px;
+    float: left;
+    margin-left: 20px;
+}
+
+article .button {
+    position: absolute;
+    bottom: 5px;
+}
+
+
+/** CART **/
+
+#cart {
+    width: 806px;
+}
+
+table {
+    width: 100%;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 5px;
+    text-align: right;
+}
+
+th.name, td.name {
+    text-align: left;
+}
+
+td.preview {
+    width: 50px;
+}
+
+td.preview img {
+    width: 100%;
+}
+
+tr.item td {
+    border: 1px solid #BCBCBC;
+}
+
+tr.total td {
+    font-weight: bold;
+}
+
+#cart table .fa {
+    color: #3299BB;
+    margin-left: 5px;
+}
+
+.spacetop {
+    margin-top: 20px;
+}
+
+.right {
+    float: right;
+}
+
+
+/** BANNER **/
+
+#banner {
+    margin: 20px 10px 10px 0px;
+    width: 806px;
+    height: 240px;
+    background-color: #FF9900;
+    text-align: center;
+}
+
+#banner h2 {
+    line-height: 160px;
+    font-size: 3em;
+    color: #E9E9E9;
+    margin: 0px;
+}
+
+#banner h3 {
+    line-height: 60px;
+    width: 500px;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #E9E9E9;
+    margin: 0px auto;
+    border-top: 1px solid #E9E9E9;
+}
