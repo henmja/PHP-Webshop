@@ -4,8 +4,6 @@
  */
 class Products {
     function __construct() {
-        // TODO initialize database connection
-        //$mysqli=mysqli_connect('localhost','root','root','products');
     }
     /**
      * Returns a given product
@@ -14,9 +12,7 @@ class Products {
      * @return product properties in an associative array
      */
     function loadProduct($product_id) {
-        // TODO load product info from the database
-        // this is just some example data for testing
-        // $mysqli=mysqli_connect('localhost','root','root','products');
+        // load product info from the database
         $mysqli=mysqli_connect('mysql.ux.uis.no','henrikm','bscr5ujv','dbhenrikm');
 	if (!$mysqli)
 		die("Can't connect to MySQL: ".mysqli_connect_error());
@@ -41,7 +37,7 @@ class Products {
      * @return products in an array
      */
     function listProducts() {
-        // TODO load products from the database
+        // load products from the database
         // this is just some example data for testing
         $p1 = $this->loadProduct(1);
         $p2 = $this->loadProduct(2);
